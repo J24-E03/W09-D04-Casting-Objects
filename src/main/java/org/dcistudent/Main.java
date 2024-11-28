@@ -25,8 +25,7 @@ public class Main {
         System.out.println("--- Task 1.2 ---");
         // Downcasting: Game reference back to Chess object
         if (game instanceof Chess) {
-            Chess chess = (Chess) game; // Downcasting
-            chess.play();
+            ((Chess) game).play(); // Downcasting
         }
 
         Game game2 = new Game();
@@ -54,13 +53,11 @@ public class Main {
 
         // Downcasting vehicles
         if (car instanceof Car) {
-            Car car2 = (Car) car;
-            car2.honk();
+            ((Car) car).honk();
         }
 
         if (bike instanceof Bike) {
-            Bike bike2 = (Bike) bike;
-            bike2.ringBell();
+            ((Bike) bike).ringBell();
         }
 
         Vehicle vehicle = new Car();
