@@ -22,6 +22,7 @@ public class Main {
         game.play();
 
         // Task 1.2
+        System.out.println("--- Task 1.2 ---");
         // Downcasting: Game reference back to Chess object
         if (game instanceof Chess) {
             Chess chess = (Chess) game; // Downcasting
